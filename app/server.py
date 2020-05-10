@@ -9,10 +9,10 @@ from starlette.middleware.cors import CORSMiddleware
 from starlette.responses import HTMLResponse, JSONResponse
 from starlette.staticfiles import StaticFiles
 
-export_file_url = 'https://www.dropbox.com/s/6bgq8t6yextloqp/export.pkl?raw=1'
-export_file_name = 'export.pkl'
+export_file_url = 'https://www.dropbox.com/s/7ynifvowp4go1bw/covid19.pkl?dl=1'
+export_file_name = 'covid19.pkl'
 
-classes = ['black', 'grizzly', 'teddys']
+classes = ['bacterial', 'covid', 'normal', 'viral']
 path = Path(__file__).parent
 
 app = Starlette()
